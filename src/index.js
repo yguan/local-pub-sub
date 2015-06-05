@@ -46,5 +46,3 @@ module.exports = {
         localStorage.setItem(convertToStorageKey(topic), JSON.stringify(info));
     }
 };
-
-window.localPubSub = module.exports;
