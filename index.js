@@ -1,7 +1,7 @@
 /*jslint nomen: true*/
 /*global module,require,localStorage,window */
 
-var pubSub = require('./pub-sub').create();
+var pubSub = require('micro-pubsub').create();
 var storageKeyPrefix = 'LocalPubSub-';
 var storageKeyPrefixLength = storageKeyPrefix.length;
 

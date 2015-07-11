@@ -11,7 +11,7 @@ var gulp         = require('gulp');
 var source       = require('vinyl-source-stream');
 
 gulp.task('browserify-global', function() {
-    return browserify('./src/index.js')
+    return browserify('./index.js')
         .bundle({standalone: 'localPubSub'})
         //Pass desired output filename to vinyl-source-stream
         .pipe(source('local-pub-sub-standalone.js'))

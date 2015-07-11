@@ -2,7 +2,7 @@
 /*jslint nomen: true*/
 /*global module,require,localStorage,window */
 
-var pubSub = _dereq_('./pub-sub').create();
+var pubSub = _dereq_('micro-pubsub').create();
 var storageKeyPrefix = 'LocalPubSub-';
 var storageKeyPrefixLength = storageKeyPrefix.length;
 
@@ -47,7 +47,7 @@ module.exports = {
         localStorage.setItem(convertToStorageKey(topic), JSON.stringify(info));
     }
 };
-},{"./pub-sub":2}],2:[function(_dereq_,module,exports){
+},{"micro-pubsub":2}],2:[function(_dereq_,module,exports){
 /*jslint nomen: true*/
 /*global module */
 // Modified from David Walsh's pubsub. http://davidwalsh.name/pubsub-javascript
