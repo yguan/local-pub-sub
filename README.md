@@ -32,7 +32,7 @@ localPubSub.subscribe('some-key', function (info) {
     console.log(info);
 });
 
-localPubSub.publish('some-key, {price: 23});
+localPubSub.publish('some-key', {price: 23});
 ```
 
 ## License
